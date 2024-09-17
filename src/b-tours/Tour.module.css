@@ -1,0 +1,98 @@
+.loading {
+  width: 6rem;
+  height: 6rem;
+  border: 5px solid var(--grey-400);
+  border-radius: 50%;
+  border-top-color: var(--green-500);
+  animation: spinner 0.6s linear infinite;
+  margin: 0 auto;
+}
+
+.container {
+  width: 90vw;
+  max-width: var(--max-width);
+  margin: 5rem auto;
+}
+.tours {
+  padding: 2rem 0;
+  display: grid;
+  gap: 2rem;
+}
+.singleTour {
+  background: var(--white);
+  border-radius: var(--borderRadius);
+  box-shadow: var(--shadow-1);
+  transition: var(--transition);
+  /* for tour price */
+  position: relative;
+}
+.singleTour:hover {
+  box-shadow: var(--shadow-3);
+}
+.singleTour .img {
+  height: 20rem;
+  border-top-right-radius: var(--borderRadius);
+  border-top-left-radius: var(--borderRadius);
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.tourPrice {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.5rem;
+  color: var(--white);
+  letter-spacing: 2px;
+  background: var(--primary-500);
+  border-top-right-radius: var(--borderRadius);
+}
+
+.tourInfo {
+  padding: 2rem 1.5rem;
+}
+.tourInfo h5 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.tourInfo p {
+  line-height: 1.5;
+  color: var(--grey-500);
+  margin-bottom: 1.25rem;
+}
+.infoBtn,
+.deleteBtn {
+  background: transparent;
+  border: transparent;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.infoBtn {
+  color: var(--primary-500);
+  font-weight: 600;
+}
+.deleteBtn {
+  border: 1px solid var(--primary-500);
+  color: var(--primary-500);
+}
+.deleteBtn:hover {
+  background: var(--primary-500);
+  color: var(--white);
+}
+@media screen and (min-width: 768px) {
+  .tours {
+    grid-template-columns: 1fr 1fr;
+    /* fix stretch */
+    align-items: start;
+  }
+}
+@media screen and (min-width: 992px) {
+  .tours {
+    grid-template-columns: 1fr 1fr 1fr;
+    /* fix stretch */
+    align-items: start;
+  }
+}
