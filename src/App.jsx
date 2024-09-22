@@ -2,10 +2,13 @@
 // import Tours from "@/b-tours/Tours";
 // import Reviews from "./c-reviews/Reviews";
 // import Questions from "./d-question/Questions";
-import Menus from "./e-menu/Menus";
+// import Menus from "./e-menu/Menus";
+// import Tabs from "./f-tabs/Tabs";
+// import Slider from "./g-slider/Slider";
+import Lorem from "./h-lorem/Lorem";
 
 function App() {
-  return <Menus />;
+  return <Lorem />;
 }
 
 export default App;
